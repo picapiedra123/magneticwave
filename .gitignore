@@ -1,6 +1,8 @@
-# Ignorar toda la instalación de WordPress excepto el tema MagneticWave
+# Ignorar toda la instalación de WordPress excepto el tema MagneticWave y el dump de BD
 /*
 !/.gitignore
+!/bd/
+!/bd/wp_theme.sql
 !/wp-content/
 /wp-content/*
 !/wp-content/themes/

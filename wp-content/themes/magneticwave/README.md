@@ -111,6 +111,16 @@ git clone https://github.com/picapiedra123/magneticwave.git
 
 Si el repositorio contiene **solo** el tema, copia el contenido clonado a `wp-content/themes/magneticwave/`. Si el clone incluye la raíz del monorepo, ajusta la ruta según cómo esté organizado el remoto.
 
+### Restaurar la base de datos incluida
+
+El repositorio incluye un volcado en `bd/wp_theme.sql` (base `wp_theme`, prefijo `wp_`).
+
+1. En phpMyAdmin o MySQL, crea la base de datos `wp_theme` (o el nombre que uses en `wp-config.php`).
+2. Importa `bd/wp_theme.sql`.
+3. Ajusta `wp-config.php` con el mismo nombre de BD, usuario y contraseña de tu entorno local.
+
+> **Nota:** El dump puede contener claves de WordPress y hashes de usuarios. No uses este archivo en producción sin revisar credenciales; en repos públicos conviene cambiar contraseñas tras importar.
+
 ---
 
 ## Configuración en WordPress
