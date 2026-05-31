@@ -1,0 +1,8 @@
+# Ignorar toda la instalación de WordPress excepto el tema MagneticWave
+/*
+!/.gitignore
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/magneticwave/
